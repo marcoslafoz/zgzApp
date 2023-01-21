@@ -132,7 +132,7 @@ div {
 /*Hospitales*/
 #listaHospitales {
     margin-top: 13rem;
-    height: 69rem;
+    height: 67.9rem;
     width: 36rem;
     font-size: 1rem;
     overflow: scroll;
@@ -151,7 +151,7 @@ div {
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff8f;
     cursor: pointer;
     transition: all .3s;
-    overflow: -moz-hidden-unscrollable;
+    overflow: hidden;
     margin-left: 2rem;
     text-align: center;
 
@@ -198,7 +198,7 @@ div {
 
 #listaFarmacias {
     margin-top: 13rem;
-    height: 69rem;
+    height: 67.9rem;
     width: 36rem;
     font-size: 1rem;
     overflow: scroll;
@@ -396,6 +396,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
 
     #listaHospitales {
-        border-radius: 0 0 7rem 7rem;
+        border-radius: 0 0 4.4rem 4.4rem;
+    }
+
+    #listaFarmacias {
+        border-radius: 0 0 4.4rem 4.4rem;
     }
 }
