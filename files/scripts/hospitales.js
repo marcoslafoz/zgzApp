@@ -27,12 +27,12 @@ function peticionAsincrona(metodo) {
 function pintarHospitales(objHospitales) {
     let contenedor = document.getElementById("listaHospitales");
     let arrayHospitales = objHospitales.result;
-    let contenido = '<ol class="HospitalesList">';
+    let contenido = '<ul class="HospitalesList">';
 
     arrayHospitales.forEach(f => {
         contenido += '<li>' + f.title + '</li>';
     });
 
-    contenido += '</ol>';
+    contenido += '</ul>';
     contenedor.innerHTML += contenido;
 }

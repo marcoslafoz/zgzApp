@@ -1,7 +1,7 @@
 //Funcion manejador
 function manejadorLoadBody() {
     console.log("Se ha cargado el body");
-    peticionAsincrona(pintarFarmaciasMejor);
+    peticionAsincrona(pintarFarmacias);
 }
 
 function peticionAsincrona(metodo) {
@@ -25,28 +25,15 @@ function peticionAsincrona(metodo) {
 function pintarFarmacias(objFarmacias) {
     let contenedor = document.getElementById("listaFarmacias");
     let arrayFarmacias = objFarmacias.result;
-    let contenido = '<ul>';
-
-    arrayFarmacias.forEach(f => {
-        contenido += '<li><h4>' + f.title + '<h4></li>';
-    });
-
-    contenido += '</ul>';
-    contenedor.innerHTML += contenido;
-}
-
-function pintarFarmaciasMejor(objFarmacias) {
-    let contenedor = document.getElementById("listaFarmacias");
-    let arrayFarmacias = objFarmacias.result;
-    let contenido = '<ol class="farmaciasList">';
+    let contenido = '<ul class="farmaciasList">';
 
     arrayFarmacias.forEach(f => {
         contenido += '<li>' + f.title + '</li>';
-        if(f.horario)contenido += '<ul><li>' + f.horario + '</li></ul></li><br>';
-        else
-        contenido += '</li> <br>'
+        //if(f.horario)contenido += '<ul><li>' + f.horario + '</li></ul></li><br>';
+        //else
+        //contenido += '</li> <br>'
     });
 
-    contenido += '</ol>';
+    contenido += '</ul>';
     contenedor.innerHTML += contenido;
 }
