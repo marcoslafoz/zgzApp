@@ -14,10 +14,6 @@ div {
     box-sizing: border-box;
 }
 
-html {
-    font-size: 10px;
-}
-
 /*Contenido*/
 
 .cont {
@@ -48,7 +44,7 @@ html {
 .logoCont {
     height: 5rem;
     width: 33rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +58,7 @@ html {
     background-image: url(./files/images/zaragoza_photo.jpg);
     background-size: 100%;
     filter: saturate(0);
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +76,7 @@ html {
 
 /*boxsCont*/
 .boxCont {
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,71 +176,77 @@ a,
 #Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
 #Resolución = B/w 320px to 479px */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /*CSS*/
+    html {
+        font-size: 25px;
+    }
 }
 
 /* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
   #Resolución = B/w 481px to 767px */
 @media (min-width: 481px) and (max-width: 767px) {
-    /*CSS*/
+    html {
+        font-size: 25px;
+    }
 }
 
 /* Smartphones (landscape) */
 @media only screen and (min-width : 321px) {
-    /*CSS*/
+    html {
+        font-size: 25px;
+    }
 }
 
 /* Smartphones (portrait) */
 @media only screen and (max-width : 320px) {
-    /*CSS*/
-}
-
-/* iPads (portrait & landscape) */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .smartphoneCont {
-        background-image: url(./files/images/smartphone.png);
-        background-size: 100%;
+    html {
+        font-size: 25px;
     }
 }
+
+/* iPhone 4 */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+    
+    html {
+        font-size: 25px;
+    }
+}
+
+
 
 /* iPads (landscape) 
   #Dispositivo = Tablets, Ipads (horizontal) 
   #Resolución = B/w 768px to 1024px */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    .smartphoneCont {
-        background-image: url(./files/images/smartphone.png);
-        background-size: 100%;
+    
+    html {
+        font-size: 25px;
     }
+
+    
 }
 
 /* iPads (portrait) 
   #Dispositivo = Tablets, Ipads (vertical) 
   #Resolucion = B/w 768px to 1024px */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    .smartphoneCont {
-        background-image: url(./files/images/smartphone.png);
-        background-size: 100%;
+    
+    html {
+        font-size: 25px;
     }
+    
+    
 }
 
 /* Ordenadores de sobremesa y portátiles */
 @media only screen and (min-width : 1224px) {
+    
+    html {
+        font-size: 10px;
+    }
+    
+
     .smartphoneCont {
         background-image: url(./files/images/smartphone.png);
         background-size: 100%;
     }
-}
-
-/* Pantallas grandes */
-@media only screen and (min-width : 1824px) {
-    .smartphoneCont {
-        background-image: url(./files/images/smartphone.png);
-        background-size: 100%;
-    }
-}
-
-/* iPhone 4 */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-    /*CSS*/
 }
