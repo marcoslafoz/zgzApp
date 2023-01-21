@@ -132,21 +132,132 @@ div {
 /*Hospitales*/
 #listaHospitales {
     margin-top: 13rem;
-    height: 63rem;
-    width: 32rem;
-    line-height: 3rem;
+    height: 69rem;
+    width: 36rem;
     font-size: 1rem;
     overflow: scroll;
+    margin-left: 0.3rem;
+}
+
+.HospitalesBoxArray {
+    width: 90%;
+    height: 5rem;
+    background-color: rebeccapurple;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff8f;
+    cursor: pointer;
+    transition: all .3s;
+    overflow: -moz-hidden-unscrollable;
+    margin-left: 2rem;
+    text-align: center;
+
+}
+
+.HospitalesBoxArray:hover {
+    transform: scale(1.05);
+}
+
+.filaTextoHospital1 {
+    padding-top: 1rem;
+    font-size: 0, 9rem;
+}
+
+.filaTextoHospital2 {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+#listaHospitales::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+#listaHospitales::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#listaHospitales::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    border: 1rem solid #eeeeee00;
+}
+
+#listaHospitales::-webkit-scrollbar-button {
+    background: transparent;
+}
+
+#listaHospitales::-webkit-scrollbar-corner {
+    background: transparent;
 }
 
 /*Farmacias*/
+
 #listaFarmacias {
     margin-top: 13rem;
-    height: 63rem;
-    width: 32rem;
-    line-height: 3rem;
+    height: 69rem;
+    width: 36rem;
     font-size: 1rem;
     overflow: scroll;
+    margin-left: 0.3rem;
+}
+
+.FarmaciasBoxArray {
+    width: 90%;
+    height: 5rem;
+    background-color: rebeccapurple;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff8f;
+    cursor: pointer;
+    transition: all .3s;
+    overflow: -moz-hidden-unscrollable;
+    margin-left: 2rem;
+    text-align: center;
+
+}
+
+.FarmaciasBoxArray:hover {
+    transform: scale(1.05);
+}
+
+.filaTextoFarmacia1 {
+    padding-top: 1rem;
+    font-size: 0, 9rem;
+}
+
+.filaTextoFarmacia2 {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+#listaFarmacias::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+#listaFarmacias::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#listaFarmacias::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    border: 1rem solid #eeeeee00;
+}
+
+#listaFarmacias::-webkit-scrollbar-button {
+    background: transparent;
+}
+
+#listaFarmacias::-webkit-scrollbar-corner {
+    background: transparent;
 }
 
 /*a fix*/
@@ -282,5 +393,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     .smartphoneCont {
         background-image: url(./files/images/smartphone.png);
         background-size: 100%;
+    }
+
+    #listaHospitales {
+        border-radius: 0 0 7rem 7rem;
     }
 }

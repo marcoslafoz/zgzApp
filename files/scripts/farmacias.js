@@ -25,15 +25,20 @@ function peticionAsincrona(metodo) {
 function pintarFarmacias(objFarmacias) {
     let contenedor = document.getElementById("listaFarmacias");
     let arrayFarmacias = objFarmacias.result;
-    let contenido = '<ul class="farmaciasList">';
+    let contenido = '';
 
     arrayFarmacias.forEach(f => {
-        contenido += '<li>' + f.title + '</li>';
-        //if(f.horario)contenido += '<ul><li>' + f.horario + '</li></ul></li><br>';
-        //else
-        //contenido += '</li> <br>'
+        //Abrimos div
+        contenido += '<div class="FarmaciasBoxArray">';
+        //Titulo 
+        contenido += '<div class="filaTextoFarmacia1">' + f.title + '</div>';
+        //Calle
+        if (f.calle) contenido += '<div class="filaTextoFarmacia2">' + f.calle + '</div>';
+        else contenido += '<div class="filaTexto2">Sin definir</div>';
+        //Cerramos div
+        contenido += '</div>';
     });
 
-    contenido += '</ul>';
+
     contenedor.innerHTML += contenido;
 }
