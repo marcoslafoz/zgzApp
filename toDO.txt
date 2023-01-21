@@ -1,0 +1,5 @@
+web html css js 
+app fake movil , movil en navegador pc , media query smartphone , no movil, hacer en vertical 
+
+bus zgz , bici, farmacias ,..  
+ZGZ APP host github

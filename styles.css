@@ -1,3 +1,67 @@
+/*Body*/
+
+* {
+    margin: 0rem;
+}
+
+body {
+    color: black;
+    background-color: white;
+    font-family: 'Samsung Sharp Sans Regular';
+}
+
+div {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+/*Home Links*/
+
+.homeLinks {
+    width: 50%;
+    font-size: 3rem;
+    font-family: 'Samsung Sharp Sans Medium';
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.homeLinks,
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Font Faces*/
+
+@font-face {
+    font-family: 'Samsung Sharp Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Regular'), url(./files/fonts/samsungsharpsans.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'Samsung Sharp Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Medium'), url(./files/fonts/samsungsharpsans-medium.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'Samsung Sharp Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold'), url(./files/fonts/samsungsharpsans-bold.woff) format('woff');
+}
+
+
+/*Media Query*/
+
 @media (max-width:500px) {
     html {
         font-size: 5px;
