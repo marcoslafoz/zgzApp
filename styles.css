@@ -33,8 +33,6 @@ html {
     width: 53.5rem;
     background-color: #EEEEEE;
     margin-top: 1rem;
-    background-image: url(./files/images/smartphone.png);
-    background-size: 100%;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -145,7 +143,8 @@ html {
 }
 
 /*a fix*/
-a,.boxCont{
+a,
+.boxCont {
     color: black;
     position: absolute;
 }
@@ -175,38 +174,6 @@ a,.boxCont{
     src: local('Samsung Sharp Sans Bold'), url(./files/fonts/samsungsharpsans-bold.woff) format('woff');
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Media Query
 
 /* Smartphones (portrait & landscape) 
@@ -214,58 +181,70 @@ a,.boxCont{
 #Resolución = B/w 320px to 479px */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /*CSS*/
-  }
-  
-  /* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
+}
+
+/* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
   #Resolución = B/w 481px to 767px */
-  @media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     /*CSS*/
-  }
-    
-  /* Smartphones (landscape) */
-  @media only screen and (min-width : 321px) {
-  /*CSS*/
-  }
-  
-  /* Smartphones (portrait) */
-  @media only screen and (max-width : 320px) {
-  /*CSS*/ 
-  }
-   
-  /* iPads (portrait & landscape) */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) {
     /*CSS*/
-  }
-   
-  /* iPads (landscape) 
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+    /*CSS*/
+}
+
+/* iPads (portrait & landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .smartphoneCont {
+        background-image: url(./files/images/smartphone.png);
+        background-size: 100%;
+    }
+}
+
+/* iPads (landscape) 
   #Dispositivo = Tablets, Ipads (horizontal) 
   #Resolución = B/w 768px to 1024px */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
-  and (orientation : landscape) {
-   /*CSS*/ 
-  }
-   
-  /* iPads (portrait) 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .smartphoneCont {
+        background-image: url(./files/images/smartphone.png);
+        background-size: 100%;
+    }
+}
+
+/* iPads (portrait) 
   #Dispositivo = Tablets, Ipads (vertical) 
   #Resolucion = B/w 768px to 1024px */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
-  and (orientation : portrait) {
-   /*CSS*/ 
-  }
-   
-  /* Ordenadores de sobremesa y portátiles */
-  @media only screen and (min-width : 1224px) {
-   /*CSS*/ 
-  }
-   
-  /* Pantallas grandes */
-  @media only screen and (min-width : 1824px) {
-   /*CSS*/ 
-  }
-   
-  /* iPhone 4 */
-  @media only screen and (-webkit-min-device-pixel-ratio : 1.5), 
-  only screen and (min-device-pixel-ratio : 1.5) {
-   /*CSS*/ 
-  }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .smartphoneCont {
+        background-image: url(./files/images/smartphone.png);
+        background-size: 100%;
+    }
+}
 
+/* Ordenadores de sobremesa y portátiles */
+@media only screen and (min-width : 1224px) {
+    .smartphoneCont {
+        background-image: url(./files/images/smartphone.png);
+        background-size: 100%;
+    }
+}
+
+/* Pantallas grandes */
+@media only screen and (min-width : 1824px) {
+    .smartphoneCont {
+        background-image: url(./files/images/smartphone.png);
+        background-size: 100%;
+    }
+}
+
+/* iPhone 4 */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /*CSS*/
+}
