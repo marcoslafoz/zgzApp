@@ -6,7 +6,7 @@
 
 body {
     color: black;
-    background-color: white;
+    background-color: #EEEEEE;
     font-family: 'Samsung Sharp Sans Regular';
 }
 
@@ -18,20 +18,136 @@ html {
     font-size: 10px;
 }
 
-/*Home Links*/
+/*Contenido*/
 
-.homeLinks {
-    width: 50%;
-    font-size: 3rem;
-    font-family: 'Samsung Sharp Sans Medium';
-    text-align: center;
-    margin-top: 5rem;
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.homeLinks,
-a {
+/*Smartphone*/
+
+.smartphoneCont {
+    height: 90rem;
+    width: 53.5rem;
+    background-color: #EEEEEE;
+    margin-top: 1rem;
+    background-image: url(./files/images/smartphone.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/*Imagen Logo*/
+
+.smartphoneLogo {
+    width: 10rem;
+    margin-top: 1.3rem;
+}
+
+.logoCont {
+    height: 5rem;
+    width: 33rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+/*boxContSlides*/
+.boxContSlides {
+    height: 15rem;
+    width: 32rem;
+    background-image: url(./files/images/zaragoza_photo.jpg);
+    background-size: 100%;
+    filter: saturate(0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14rem;
+    position: absolute;
+    box-shadow: 20px 20px 60px #000000cc, -20px -20px 60px #00000023;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.boxContSlides:hover {
+    transform: scale(1.05);
+}
+
+
+/*boxsCont*/
+.boxCont {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.3rem;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff8f;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.boxCont:hover {
+    transform: scale(1.05);
+}
+
+/*BoxPositionXY*/
+
+#boxContPosition1 {
+    margin-top: 31rem;
+    margin-left: -16rem;
+    height: 12rem;
+    width: 15rem;
+}
+
+#boxContPosition2 {
+    margin-top: 31rem;
+    margin-left: 1rem;
+    height: 12rem;
+    width: 15rem;
+}
+
+#boxContPosition3 {
+    margin-top: 45rem;
+    margin-left: -16rem;
+    height: 12rem;
+    width: 15rem;
+}
+
+#boxContPosition4 {
+    margin-top: 45rem;
+    margin-left: 1rem;
+    height: 12rem;
+    width: 15rem;
+}
+
+#boxContPositionDown {
+    margin-top: 59rem;
+    margin-left: -16rem;
+    height: 13rem;
+    width: 32rem;
+}
+
+/*Hospitales*/
+#listaHospitales {
+    margin-top: 13rem;
+    height: 63rem;
+    width: 32rem;
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+/*a fix*/
+a,.boxCont{
     color: black;
-    text-decoration: none;
+    position: absolute;
 }
 
 /*Font Faces*/
@@ -60,34 +176,96 @@ a {
 }
 
 
-/*Media Query*/
 
-@media (max-width:500px) {
-    html {
-        font-size: 5px;
-    }
-}
 
-@media (min-width:501px) and (max-width:700px) {
-    html {
-        font-size: 5px;
-    }
-}
 
-@media (min-width:701px) and (max-width:900px) {
-    html {
-        font-size: 7px;
-    }
-}
 
-@media (min-width:900) and (max-width:1200px) {
-    html {
-        font-size: 9px;
-    }
-}
 
-@media (min-width:1200px) {
-    html {
-        font-size: 12px;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Query
+
+/* Smartphones (portrait & landscape) 
+#Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
+#Resolución = B/w 320px to 479px */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /*CSS*/
+  }
+  
+  /* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
+  #Resolución = B/w 481px to 767px */
+  @media (min-width: 481px) and (max-width: 767px) {
+    /*CSS*/
+  }
+    
+  /* Smartphones (landscape) */
+  @media only screen and (min-width : 321px) {
+  /*CSS*/
+  }
+  
+  /* Smartphones (portrait) */
+  @media only screen and (max-width : 320px) {
+  /*CSS*/ 
+  }
+   
+  /* iPads (portrait & landscape) */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /*CSS*/
+  }
+   
+  /* iPads (landscape) 
+  #Dispositivo = Tablets, Ipads (horizontal) 
+  #Resolución = B/w 768px to 1024px */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+  and (orientation : landscape) {
+   /*CSS*/ 
+  }
+   
+  /* iPads (portrait) 
+  #Dispositivo = Tablets, Ipads (vertical) 
+  #Resolucion = B/w 768px to 1024px */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+  and (orientation : portrait) {
+   /*CSS*/ 
+  }
+   
+  /* Ordenadores de sobremesa y portátiles */
+  @media only screen and (min-width : 1224px) {
+   /*CSS*/ 
+  }
+   
+  /* Pantallas grandes */
+  @media only screen and (min-width : 1824px) {
+   /*CSS*/ 
+  }
+   
+  /* iPhone 4 */
+  @media only screen and (-webkit-min-device-pixel-ratio : 1.5), 
+  only screen and (min-device-pixel-ratio : 1.5) {
+   /*CSS*/ 
+  }
+
