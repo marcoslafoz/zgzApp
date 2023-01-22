@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="./files/images/favicon.png">
 </head>
 
-<body>
+<body onload="gettingWeatherAndClock()">
 	<div class="cont">
 		<div class="smartphoneCont">
 			<a href="./">
@@ -19,7 +19,7 @@
 			</a>
 			<div class="boxContSlides">
 				<div class="slideCity">Zaragoza</div>
-				<div class="slideTemp">14º</div>
+				<div class="slideTemp" id="temp"></div> 
 				<div class="slideWeather">Soleado</div>
 				<div id="clock" class="slideClock" onload="currentTime()"></div>
 			</div>
@@ -40,22 +40,7 @@
 			</a>
 		</div>
 	</div>
-	<script>
-		function currentTime() {
-			let date = new Date();
-			let hh = date.getHours();
-			let mm = date.getMinutes();
-
-			hh = (hh < 10) ? "0" + hh : hh;
-			mm = (mm < 10) ? "0" + mm : mm;
-			
-			let time = hh + ":" + mm;
-
-			document.getElementById("clock").innerText = time;
-			let t = setTimeout(function () { currentTime() }, 1000);
-		}
-		currentTime();
-	</script>
+	<script src="./files/scripts/weatherAndClock.js"></script>
 </body>
 
 </html>
