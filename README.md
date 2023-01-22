@@ -1,1 +1,1 @@
-[![zgzApp](https://github.com/marcoslafoz/zgzApp/blob/master/files/images/preview.png?raw=true)](https://marcoslafoz.github.io/zgzApp/)
+[![zgzApp](https://github.com/marcoslafoz/zgzApp/blob/master/files/preview/preview-22-01-23.png?raw=true)](https://marcoslafoz.github.io/zgzApp/)
