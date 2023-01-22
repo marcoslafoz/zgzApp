@@ -75,8 +75,7 @@ div {
 
 .slideCity{
     color: white;
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1.55rem;
     position: absolute;
     margin-top: -9rem;
     margin-left: -20rem;
@@ -85,11 +84,11 @@ div {
 
 .slideTemp{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     position: absolute;
     margin-top: -5rem;
-    margin-left: -24.5rem;
-    text-shadow: black 0.1em 0.1em 0.2em
+    margin-left: -26rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .slideWeather{
@@ -395,7 +394,7 @@ body::-webkit-scrollbar-thumb {
 only screen and (min-device-pixel-ratio : 1.5) {
 
     html {
-        font-size: 25px;
+        font-size: 28px;
     }
 }
 
