@@ -73,6 +73,38 @@ div {
     transform: scale(1.05);
 }
 
+.slideCity{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -9rem;
+    margin-left: -20rem;
+}
+
+.slideTemp{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: -24.5rem;
+}
+
+.slideWeather{
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: -17rem;
+}
+
+.slideClock{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    margin-top: 0rem;
+    margin-left: 15rem;
+}
 
 /*boxsCont*/
 .boxCont {
