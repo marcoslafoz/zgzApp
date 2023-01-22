@@ -392,10 +392,9 @@ body::-webkit-scrollbar-thumb {
 /* iPhone 4 */
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
-
     html {
-        font-size: 28px;
-    }
+        font-size: 25px;
+    } 
 }
 
 /* iPads (landscape) 
@@ -404,7 +403,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
     html {
-        font-size: 10px;
+        font-size: 26px;
     }
 }
 
