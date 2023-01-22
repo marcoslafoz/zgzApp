@@ -80,6 +80,7 @@ div {
     position: absolute;
     margin-top: -9rem;
     margin-left: -20rem;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .slideTemp{
@@ -88,6 +89,7 @@ div {
     position: absolute;
     margin-top: -5rem;
     margin-left: -24.5rem;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .slideWeather{
@@ -96,6 +98,7 @@ div {
     position: absolute;
     margin-top: -5rem;
     margin-left: -17rem;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .slideClock{
@@ -104,6 +107,7 @@ div {
     position: absolute;
     margin-top: 0rem;
     margin-left: 15rem;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 /*boxsCont*/
@@ -114,7 +118,7 @@ div {
     align-items: center;
     position: absolute;
     font-size: 1.3rem;
-    background: #e0e0e0;
+    background-color: #e0e0e0;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff8f;
     cursor: pointer;
     transition: all .3s;
