@@ -17,7 +17,7 @@ const gettingWeatherAndClock = () => {
         .then(data => {
             console.log(data.weather[0].icon)
             state.temperatura = data.main.temp;
-            state.temperatura = Math.trunc(state.temperatura);
+            state.temperatura = Math.trunc(state.temperatura + 0.5);
             state.city = data.name;
             state.country = data.sys.country
 

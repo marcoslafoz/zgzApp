@@ -28,8 +28,8 @@ function pintarFarmacias(objFarmacias) {
     let contenido = '';
 
     arrayFarmacias.forEach(f => {
-        //const ubicacion                                         
-        const mapsUrl = 'https://www.google.es/maps/search/' + f.title + ' ' + f.calle + '/@41.656279102693006,-0.8787730422828074z/data=!3m1!4b1';
+        var searchLocation = f.title +'+'+ f.calle + '+zaragoza' ;                                       
+        const mapsUrl = 'https://www.google.es/maps/search/' + searchLocation +'/@41.656279102693006,-0.8787730422828074z/data=!3m1!4b1';
         //Abrimos div
         contenido += '<div class="FarmaciasBoxArray">';
         //Titulo 
