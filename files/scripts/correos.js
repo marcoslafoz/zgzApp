@@ -1,3 +1,11 @@
+const config = {
+    // etc...
+    kit: {
+      // etc...
+      floc: process.env.NODE_ENV === "development",
+    },
+  };
+
 //Funcion manejador
 function manejadorLoadBody() {
     console.log("Se ha cargado el body");
