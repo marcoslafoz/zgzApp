@@ -1,5 +1,5 @@
 const gettingWeatherAndClock = () => {
-    const inputValue = 'zaragoza' //we take input value
+    const inputValue = 'zaragoza'
 
     const API_URL = 'https://api.openweathermap.org/data/2.5/weather?q=';
     const API_KEY = 'fd48bdf8a8b87b3c140f17625f4e2d57';
@@ -9,11 +9,11 @@ const gettingWeatherAndClock = () => {
         city: null,
         country: null,
         icon: null,
-    }//create state Object
+    }
 
-    // if input was written city name then run that code
-    fetch(`${API_URL}${inputValue}&appid=${API_KEY}&units=metric`)//we accept city information 
-        .then(response => response.json()) //{}{}{}{}{}
+    // Weather
+    fetch(`${API_URL}${inputValue}&appid=${API_KEY}&units=metric`)
+        .then(response => response.json())
         .then(data => {
             console.log(data.weather[0].icon)
             state.temperatura = data.main.temp;
@@ -38,6 +38,7 @@ const gettingWeatherAndClock = () => {
         document.getElementById("clock").innerText = time;
         let t = setTimeout(function () { currentTime() }, 1000);
     }
+
     currentTime();
 }
 

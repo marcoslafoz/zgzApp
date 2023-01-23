@@ -42,7 +42,6 @@ function pintarFarmacias(objFarmacias) {
         //Cerramos div
         contenido += '</div>';
     });
-
-
+    
     contenedor.innerHTML += contenido;
 }
