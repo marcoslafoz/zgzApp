@@ -28,6 +28,8 @@ function pintarFarmacias(objFarmacias) {
     let contenido = '';
 
     arrayFarmacias.forEach(f => {
+        //const ubicacion                                         
+        const mapsUrl = 'https://www.google.es/maps/search/' + f.title + ' ' + f.calle + '/@41.656279102693006,-0.8787730422828074z/data=!3m1!4b1';
         //Abrimos div
         contenido += '<div class="FarmaciasBoxArray">';
         //Titulo 
@@ -35,6 +37,8 @@ function pintarFarmacias(objFarmacias) {
         //Calle
         if (f.calle) contenido += '<div class="filaTextoFarmacia2">' + f.calle + '</div>';
         else contenido += '<div class="filaTexto2">Sin definir</div>';
+        //Ubicacion
+        contenido += '<div class="filaTextoFarmacia2"><a href="' + mapsUrl + '" target="_blank" class="ubicacionURL"><img src="../files/images/locationIcon.png" class="locationIcon"></a></div>';
         //Cerramos div
         contenido += '</div>';
     });
