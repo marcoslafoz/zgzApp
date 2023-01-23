@@ -29,9 +29,8 @@ function pintarOficinasCorreos(objOficinasCorreos) {
 
 
     arrayOficinasCorreos.forEach(f => {
-        //const ubicacion
-        //var searchLocation = f.title +'+'+ f.postalCode + '+zaragoza' ;                                       
-        //const mapsUrl = 'https://www.google.es/maps/search/' + searchLocation +'/@41.656279102693006,-0.8787730422828074z/data=!3m1!4b1';
+        var searchLocation = f.title +'+'+ f.postalCode + '+zaragoza' ;                                       
+        const mapsUrl = 'https://www.google.es/maps/search/' + searchLocation +'/@41.656279102693006,-0.8787730422828074z/data=!3m1!4b1';
         //Abrimos div
         contenido += '<div class="OficinasCorreosBoxArray">';
         //Titulo 
@@ -39,9 +38,9 @@ function pintarOficinasCorreos(objOficinasCorreos) {
         //Calle y CP
         contenido += '<div class="filaTextoCorreos2">' + f.streetAddress + ', ' + f.postalCode + '</div>';
         //Telefono y Horario
-        //contenido += '<div class="filaTextoCorreos2">' + f.telephone + '</div>';
+        contenido += '<div class="filaTextoCorreos2">' + f.telephone + '</div>';
         //Ubicacion
-        //contenido += '<div class="filaTextoCorreos2"><a href="' + mapsUrl + '" target="_blank" class="ubicacionURL"><img src="../files/images/locationIcon.png" class="locationIcon"></a></div>';
+        contenido += '<div class="filaTextoCorreos2"><a href="' + mapsUrl + '" target="_blank" class="ubicacionURL"><img src="../files/images/locationIcon.png" class="locationIcon"></a></div>';
         //Cerramos div
         contenido += '</div>';
     });
