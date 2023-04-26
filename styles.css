@@ -52,6 +52,7 @@ div {
 }
 
 /*boxContSlides*/
+
 .boxContSlides {
     height: 15rem;
     width: 32rem;
@@ -110,6 +111,7 @@ div {
 }
 
 /*boxsCont*/
+
 .boxCont {
     border-radius: 1rem;
     display: flex;
@@ -158,45 +160,8 @@ div {
     width: 15rem;
 }
 
-/*
-#boxContPosition5 {
-    margin-top: 45rem;
-    margin-left: -16rem;
-    height: 5rem;
-    width: 15rem;
-}
-
-#boxContPosition6 {
-    margin-top: 45rem;
-    margin-left: 1rem;
-    height: 5rem;
-    width: 15rem;
-}
-
-#boxContPosition7 {
-    margin-top: 52rem;
-    margin-left: -16rem;
-    height: 5rem;
-    width: 15rem;
-}
-
-#boxContPosition8 {
-    margin-top: 52rem;
-    margin-left: 1rem;
-    height: 5rem;
-    width: 15rem;
-}
-
-#boxContPositionDown {
-    margin-top: 59rem;
-    margin-left: -16rem;
-    height: 5rem;
-    width: 32rem;
-}
-
-*/
-
 /*Hospitales*/
+
 #listaHospitales {
     margin-top: 13rem;
     height: 67.9rem;
@@ -238,6 +203,8 @@ div {
     font-size: 0.8rem;
     color: grey;
 }
+
+/*Scrollbar Hospitales*/
 
 #listaHospitales::-webkit-scrollbar {
     width: 0.5rem;
@@ -305,6 +272,8 @@ div {
     color: grey;
 }
 
+/*Scrollbar Farmacias*/
+
 #listaFarmacias::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -327,7 +296,7 @@ div {
     background: transparent;
 }
 
-/*Correos*/
+/*OficinasCorreos*/
 
 #listaOficinasCorreos {
     margin-top: 13rem;
@@ -371,6 +340,8 @@ div {
     color: grey;
 }
 
+/*Scrollbar OficinaCorreos*/
+
 #listaOficinasCorreos::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -410,6 +381,7 @@ a,
 }
 
 /*a fix*/
+
 a,
 boxCont {
     color: black;
@@ -442,6 +414,7 @@ boxCont {
 }
 
 /*Scroll bar*/
+
 body::-webkit-scrollbar {
     width: 1.5rem;
 }
@@ -470,7 +443,7 @@ body::-webkit-scrollbar-thumb {
     border: 0.5rem solid #eeeeee00;
 }
 
-/*Media Query
+/*Media Query*/
 
 /* Smartphones (portrait & landscape) 
 #Dispositivo = Mayoría de teléfonos móviles (vertical y horizontal) 
@@ -555,3 +528,43 @@ only screen and (min-device-pixel-ratio : 1.5) {
         border-radius: 0 0 4.4rem 4.4rem;
     }
 }
+
+/*Temp*/
+
+/*
+#boxContPosition5 {
+    margin-top: 45rem;
+    margin-left: -16rem;
+    height: 5rem;
+    width: 15rem;
+}
+
+#boxContPosition6 {
+    margin-top: 45rem;
+    margin-left: 1rem;
+    height: 5rem;
+    width: 15rem;
+}
+
+#boxContPosition7 {
+    margin-top: 52rem;
+    margin-left: -16rem;
+    height: 5rem;
+    width: 15rem;
+}
+
+#boxContPosition8 {
+    margin-top: 52rem;
+    margin-left: 1rem;
+    height: 5rem;
+    width: 15rem;
+}
+
+#boxContPositionDown {
+    margin-top: 59rem;
+    margin-left: -16rem;
+    height: 5rem;
+    width: 32rem;
+}
+
+*/

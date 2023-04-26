@@ -1,6 +1,5 @@
 //Funcion manejador
 function manejadorLoadBody() {
-    console.log("Se ha cargado el body");
     peticionAsincrona(pintarHospitales);
 }
 
@@ -30,8 +29,8 @@ function pintarHospitales(objHospitales) {
     let contenido = '';
 
     arrayHospitales.forEach(f => {
-        var searchLocation = f.title +'+'+ f.calle + '+zaragoza' ;                                       
-        const mapsUrl = 'https://www.google.es/maps/search/' + searchLocation +'/@41.656279102693006,-0.8787730422828074z/data=!3m1!4b1';
+        var searchLocation = f.title + '+' + f.calle + '+zaragoza';
+        const mapsUrl = 'https://www.google.es/maps/search/' + searchLocation + '/@41.656279102693006,-0.8787730422828074z/data=!3m1!4b1';
         //Abrimos div
         contenido += '<div class="HospitalesBoxArray">';
         //Titulo 
